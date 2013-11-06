@@ -16,7 +16,7 @@ public class HandlebarsTilesContainerFactory extends CompleteAutoloadTilesContai
     private final HandlebarsRenderer handlebarsRenderer;
 
     public HandlebarsTilesContainerFactory(String prefix, String suffix) {
-        this.handlebarsRenderer = new HandlebarsRhinoRenderer(prefix, suffix);//new HandlebarsRenderer(prefix, suffix);
+        this.handlebarsRenderer = new HandlebarsRenderer(prefix, suffix);//new HandlebarsRenderer(prefix, suffix);
     }
 
     @Override

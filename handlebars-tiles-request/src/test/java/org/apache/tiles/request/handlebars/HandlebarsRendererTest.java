@@ -15,7 +15,7 @@ import org.apache.tiles.request.Request;
 import org.junit.Before;
 import org.junit.Test;
 
-public class HandlebarsRhinoRendererTest {
+public class HandlebarsRendererTest {
 
     private Request mockRequest = mock(Request.class);
     private StringWriter writer = new StringWriter();
@@ -34,7 +34,7 @@ public class HandlebarsRhinoRendererTest {
 
     @Test
     public void testRender() throws IOException {
-        HandlebarsRenderer hbr = new HandlebarsRhinoRenderer("/hbr", ".hbr");
+        HandlebarsRenderer hbr = new HandlebarsRenderer("/hbr", ".hbr");
         hbr.render("template", mockRequest);
         assertEquals("Hello, Viddu",  writer.toString());
     }
